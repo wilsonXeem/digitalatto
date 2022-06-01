@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="All Together Make Us Stronger." />
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- SITE TITLE -->
+    <title>DGTL IDO PHASE 2</title>
+    <!-- Favicon Icon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://digitalatto.io/ido/assets/images/logo.png"
+    />
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- Latest Bootstrap min CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!-- ionicons CSS -->
+    <link rel="stylesheet" href="assets/css/ionicons.min.css" />
+    <!--- owl carousel CSS-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/owlcarousel/css/owl.theme.default.min.css"
+    />
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/spop.min.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Color CSS -->
+    <link id="layoutstyle" rel="stylesheet" href="assets/color/theme.css" />
+    <meta property="og:image" content="/assets/images/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <style>
+      button[disabled] {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+      .small,
+      small {
+        font-size: 100%;
+        font-weight: 400;
+      }
+      input {
+        max-width: 100%;
+      }
+      .newsletter_form input {
+        text-align: left;
+      }
+      #popupdarkbg {
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: none;
+      }
+      #popup {
+        display: none;
+        position: fixed;
+        top: 35%;
+        left: 30%;
+        width: 40%;
+        height: 15%;
+        background-color: white;
+        z-index: 10;
+      }
+      #popup iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      #show {
+        display: none;
+      }
+      #popupdarkbg {
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: none;
+      }
+      @media screen and (max-width: 600px) {
+        #popup {
+          top: 20%;
+          left: 10%;
+          width: 80%;
+          height: 20%;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        #popup {
+          top: 20%;
+          left: 10%;
+          width: 80%;
+          height: 20%;
+        }
+        #show {
+          display: block;
+        }
+        #link {
+          display: none;
+        }
+      }
+      #logo_img {
+        width: 20%;
+      }
+      @media screen and (max-width: 575px) {
+        #logo_img {
+          width: 40%;
+        }
+        #tokenAddress {
+          font-size: 13px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        #pre_contract {
+          font-size: 12px;
+        }
+      }
+    </style>
+    <script>
+      var test = false; // False if contracts are on Mainnet
+      var contractAddressSale = "0x88b84b76d9eE9FdC73B39b8651179035f997560b";
+      var contractAddressToken = "0xEc328682a5192c6b8DeC40D13eDDc582DAd128D0";
+    </script>
+  </head>
+  <body class="v_blue" data-spy="scroll" data-offset="110">
+    <!-- START SECTION BANNER -->
+    <section
+      id="ico"
+      class="section_banner section_gradiant"
+      data-z-index="1"
+      data-parallax="scroll"
+      data-image-src="assets/images/banner_bg3.png"
+    >
+      <div id="banner_bg_effect" class="banner_effect"></div>
+      <div class="container">
+        <center>
+          <a href="../index.html">
+            <img id="logo_img" src="assets/images/logo.png" /></a
+          ><br />
+          <button
+            style="text-align: center; padding: 1px 20px"
+            id="addMainBSC"
+            class="animation switch"
+            data-animation="fadeInUp"
+            data-animation-delay="1.2s"
+          >
+            Add BSC Mainnet
+          </button>
+        </center>
+        <div
+          class="bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+          data-animation="fadeInUp"
+          data-animation-delay="0.2s"
+          style="
+            border-radius: 50px;
+            box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            -webkit-box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            -moz-box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            background-color: transparent;
+            background: rgb(5 4 27 / 78%);
+          "
+        >
+          <!--<p id="addMainBSC" style="padding: 0px 10px 0px 10px; color:white; border-radius:0px; overflow-wrap: break-word;" name="addMainBSC">Connect to SMARTCHAIN</p>-->
+          <p id="nometamask" class="err" style="display: none; color: white">
+            Please install Metamask first...
+          </p>
+          <div class="network small">
+            <span id="curnet"
+              ><span class="err">PLEASE, CONNECT YOUR WALLET FIRST</span></span
+            >:
+            <span
+              style="color: #5957cd; overflow-wrap: break-word"
+              id="myAddr"
+            ></span>
+            <br />Referred by:
+            <span style="color: #5957cd" id="referrer">none</span><br />
+            <span style="color: white"
+              >Phase 2 price:
+              <span style="color: #5957cd">
+                1 BNB = <span class="rate">22910.0 </span>
+                <span class="tokenSymbol">DGTL</span></span
+              ></span
+            ><br />
+            <p style="color: white">
+              Token Address:
+              <a
+                target="_blank"
+                href="https://bscscan.com/token/0xd4a738a556cf6130cd152b1c44b943e738f0ecb5"
+                style="overflow-wrap: break-word; color: #5957cd"
+                class="tokenAddress"
+                id="tokenAddress"
+                >0xd4a738a556cf6130cd152b1c44b943e738f0ecb5</a
+              >
+              <button
+                style="
+                  background: transparent;
+                  border: none;
+                  padding: 0 !important;
+                  margin: 0 !important;
+                "
+                onclick="myFunction()"
+                class="app__address-copy"
+              >
+                <img src="assets/images/clipboard-icon.png" alt="" />
+              </button>
+            </p>
+            <h5>Token Sale Status</h5>
+            <span>--</span>
+            <p>
+              <span
+                id="finished"
+                style="display: none; font-weight: bold"
+                class="status green"
+                >Finished</span
+              >
+              <span
+                id="addtokens"
+                style="display: none; font-weight: bold"
+                class="status err"
+                ><br />Coonectivity Error Ask Admin</span
+              >
+              <span
+                id="active"
+                style="display: none; font-weight: bold"
+                class="status green"
+                >Active</span
+              >
+              <span
+                id="paused"
+                style="display: none; font-weight: bold"
+                class="status err"
+                >Paused</span
+              >
+              <span
+                id="upcoming"
+                style="display: none; font-weight: bold"
+                class="status blue"
+                >Upcoming</span
+              >
+            </p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div
+              class="pr_box bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+              style="
+                border-radius: 20px;
+                box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -webkit-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -moz-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                background-color: transparent;
+              "
+            >
+              <h6
+                class="animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.2s"
+              >
+                Starting time :
+              </h6>
+              <p
+                class="animation"
+                data-animation="fadeInUp"
+                id="start"
+                data-animation-delay="0.4s"
+              >
+                TUE FEB 01 2022 00:00:00
+              </p>
+            </div>
+            <div
+              style="
+                border-radius: 20px;
+                box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -webkit-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -moz-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                background-color: transparent;
+              "
+              class="pr_box bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+            >
+              <h6
+                class="animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.2s"
+              >
+                My Token Balance:
+              </h6>
+              <p><span id="myTokens">0</span> DGTL</p>
+            </div>
+            <div
+              style="
+                border-radius: 20px;
+                box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -webkit-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -moz-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                background-color: transparent;
+              "
+              class="pr_box bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+            >
+              <h6
+                class="animation"
+                data-animation="fadeInUp"
+                data-animation-delay="1s"
+              >
+                Add Token To Your Wallet
+              </h6>
+              <button
+                style="text-align: center; padding: 1px 20px"
+                id="addToken"
+                class="animation"
+                data-animation="fadeInUp"
+                data-animation-delay="1.2s"
+              >
+                Add to Wallet
+              </button>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="col-lg-6">
+            <div
+              class="token_sale res_md_mb_40 res_md_mt_40 res_sm_mb_30 res_sm_mt_30"
+            >
+              <div
+                style="border-radius: 20px"
+                class="tk_countdown text-center animation token_countdown_bg"
+                data-animation="fadeIn"
+                data-animation-delay="1s"
+              >
+                <div class="tk_counter_inner">
+                  <span style="color: #fff">Phase 2 Ends in</span>
+                  <div
+                    class="tk_countdown_time box_shadow_none transparent_bg animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay="0.7s"
+                    data-time="2022/06/27 00:00:00"
+                  ></div>
+                  <br />
+                  <p style="color: #fff">
+                    IDO Progress<br />
+                    <progress
+                      id="progresss"
+                      value="10"
+                      max="100"
+                      style="width: 70%"
+                    ></progress>
+                  </p>
+                  <div style="color: white">
+                    1 BNB = <span class="rate">22910</span>
+                    <span class="tokenSymbol">DGTL</span>
+                  </div>
+                  <p>
+                    <input
+                      value="0.5"
+                      min="0.0001"
+                      type="number"
+                      id="buyAmount"
+                      style="
+                        border-radius: 15px;
+                        background: #04051c;
+                        text-align: center;
+                        width: auto;
+                        padding: 0;
+                        color: white;
+                        margin-top: 15px;
+                        border: 1px solid white !important;
+                      "
+                    />
+                  </p>
+                  <div style="color: #fff">
+                    You get:
+                    <span
+                      style="color: orange; font-weight: bold; font-size: 21px"
+                      id="get"
+                      >0</span
+                    >
+                    <span class="tokenSymbol">DGTL</span>
+                  </div>
+                  <button id="buyBtn" class="btn btn-default animation">
+                    Buy via BNB
+                  </button>
+                  <button id="link" class="btn btn-default animation">
+                    Claim Airdrop
+                  </button>
+                  <a
+                    id="show"
+                    href="airdrop.html?ref=0xd4a738a556cf6130cd152b1c44b943e738f0ecb5"
+                    class="btn btn-default animation"
+                    >Claim Airdrop</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div id="popup">
+            <iframe
+              id="popupiframe"
+              style="overflow: scroll; width: 100%"
+              frameborder="0"
+              allowtransparency="true"
+            ></iframe>
+          </div>
+          <div id="popupdarkbg"></div>
+          <div class="col-lg-3">
+            <div
+              style="
+                border-radius: 20px;
+                box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -webkit-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -moz-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                background-color: transparent;
+              "
+              class="pr_box bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+            >
+              <h6
+                class="animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.6s"
+              >
+                Ending time :
+              </h6>
+              <p
+                class="animation"
+                data-animation="fadeInUp"
+                id="end"
+                data-animation-delay="0.8s"
+              >
+                THU MAR 31 2022 23:59:00
+              </p>
+            </div>
+            <div
+              style="
+                border-radius: 20px;
+                box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -webkit-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -moz-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                background-color: transparent;
+              "
+              class="pr_box bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+            >
+              <h6
+                class="animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.6s"
+              >
+                Total tokens sale
+              </h6>
+              <p
+                class="animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.8s"
+              >
+                <span class="saleqty">504020000</span>
+              </p>
+            </div>
+            <div
+              style="
+                border-radius: 20px;
+                box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -webkit-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                -moz-box-shadow: 0px 0px 30px -13px rgba(0, 237, 255, 0.66) inset;
+                background-color: transparent;
+              "
+              class="pr_box bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+            >
+              <h6
+                class="animation"
+                data-animation="fadeInUp"
+                data-animation-delay="1s"
+              >
+                Connect Wallet
+              </h6>
+              <button
+                style="text-align: center; padding: 1px 20px"
+                id="connect"
+                class="animation"
+                data-animation="fadeInUp"
+                data-animation-delay="1.2s"
+              >
+                Connect Wallet
+              </button>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <!--<div style="border-radius: 50px; box-shadow: 0px 0px 56px -20px rgba(0,247,247,0.66);
+            -webkit-box-shadow: 0px 0px 56px -20px rgba(0,247,247,0.66);
+            -moz-box-shadow: 0px 0px 56px -20px rgba(0,247,247,0.66); background-color: transparent; background:rgb(5 4 27 / 78%);" class="bg-white-tran radius_box token_sale_box_white text_white text-center animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+               <div style="text-align: center; color:white;">
+                  <h1 style="text-align: center; color:white;">Need More Coins</h1><br>
+                  <h5 style="text-align: center; color:white;">Complete the task and get $100 worth of DGTL</h5><br>  
+                  <p><a href="task.html" style="width: fit-content;" class="btn btn-default animation">Complete Tasks</a></p>
+            </div>
+            </div>-->
+        <br />
+        <div
+          style="
+            border-radius: 50px;
+            box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            -webkit-box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            -moz-box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            background-color: transparent;
+            background: rgb(5 4 27 / 78%);
+          "
+          class="bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+          data-animation="fadeInUp"
+          data-animation-delay="0.2s"
+        >
+          <div style="text-align: center; color: white">
+            <h1 style="text-align: center; color: white">Claim Tokens</h1>
+            <br />
+            <h5 style="text-align: center; color: white">
+              Tokens claim: <span id="claimtime">Loading...</span>
+            </h5>
+            <span id="canhcdelay" style="display: none" class="claimstatus"
+              >Can be claimed after hardcap is reached +
+              <span id="canhcdelayh"></span
+            ></span>
+            <span id="canhc" style="display: none" class="claimstatus"
+              >Can be claimed immediately after hardcap is reached</span
+            >
+            <span id="cannothc" style="display: none" class="claimstatus"
+              >Can be claimed only when unlock time comes</span
+            >
+            <h5 style="text-align: center; color: white">
+              Unclaimed: <span id="myUnclaimed">Loading...</span>
+            </h5>
+            <div id="claimstatus"></div>
+            <span id="claimok" style="display: none" class="claimstatus green"
+              >Tokens are unlocked and can be claimed</span
+            >
+            <span id="claimnotok" style="display: none" class="claimstatus err"
+              >Tokens are locked</span
+            >
+          </div>
+          <p>
+            <button class="btn btn-default animation" id="claim">
+              Claim my tokens
+            </button>
+          </p>
+        </div>
+        <br />
+        <br />
+        <div
+          style="
+            border-radius: 50px;
+            box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            -webkit-box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            -moz-box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            background-color: transparent;
+            background: rgb(5 4 27 / 78%);
+          "
+          class="bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+          data-animation="fadeInUp"
+          data-animation-delay="0.2s"
+        >
+          <div style="text-align: center">
+            <h2 style="color: white">How To Buy?</h2>
+            <p style="color: white">Check out the video for tutorial</p>
+            <div class="container-yt">
+              <iframe
+                class="responsive-iframe"
+                src="https://www.youtube-nocookie.com/embed/q0pPM2LxEkE?controls=0"
+              ></iframe>
+            </div>
+            <br />
+          </div>
+        </div>
+        <style>
+          .container-yt {
+            position: relative;
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+          }
+          .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+          }
+        </style>
+        <br />
+        <br />
+        <div
+          style="
+            border-radius: 50px;
+            box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            -webkit-box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            -moz-box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            background-color: transparent;
+            background: rgb(5 4 27 / 78%);
+          "
+          class="bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+          data-animation="fadeInUp"
+          data-animation-delay="0.2s"
+        >
+          <div style="text-align: center">
+            <h2 style="color: white">Sale contract</h2>
+            <p style="color: white">
+              You can also buy tokens by sending BNB to this contract (gas limit
+              min. 200000):
+            </p>
+            <p id="pre_contract">
+              <a
+                href="https://bscscan.com/address/0xd4a738a556cf6130cd152b1c44b943e738f0ecb5"
+                style="
+                  border: 1px solid white;
+                  padding: 5px;
+                  background-color: white;
+                  color: black;
+                  overflow-wrap: break-word;
+                "
+                id="saleAddress"
+                >0xd4a738a556cf6130cd152b1c44b943e738f0ecb5</a
+              ><button
+                class="btn btn-default animation"
+                style="border-radius: none"
+                id="copySale"
+              >
+                Copy address
+              </button>
+            </p>
+            <div style="text-align: center" id="">
+              <img src="./assets/images/qr-scan.jpg" alt="" />
+            </div>
+            <span>Scan the QR code via Metamask/Trustwallet etc.</span>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div
+          style="
+            border-radius: 50px;
+            box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            -webkit-box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            -moz-box-shadow: 0px 0px 56px -20px rgba(0, 247, 247, 0.66);
+            background-color: transparent;
+            background: rgb(5 4 27 / 78%);
+          "
+          class="bg-white-tran radius_box token_sale_box_white text_white text-center animation"
+          data-animation="fadeInUp"
+          data-animation-delay="0.2s"
+        >
+          <div style="text-align: center">
+            <h2 style="color: white">Referral program</h2>
+            <p style="color: white">
+              Share your referral link and get paid instantly to your wallet for
+              every referred token purchase.
+            </p>
+            <p style="color: white">
+              Total paid to referrers: <span id="refTotal"></span> BNB
+            </p>
+            <p style="color: white">
+              Referral commission: <span id="refPercent">10</span>%
+            </p>
+            <p style="color: white">
+              Your referral earnings: <span id="refMy"></span> BNB
+            </p>
+            <p style="color: white">
+              Share your referral link or QR code and get commission for
+              referred token purchases instantly to your wallet.
+            </p>
+            <p>
+              <input
+                style="width: 50%; padding: 5px"
+                type="text"
+                id="referLink"
+                size="50%"
+                readonly="true"
+              /><button
+                class="btn btn-default animation"
+                id="copyreflink"
+                style="border-radius: none"
+              >
+                Copy link
+              </button>
+            </p>
+            <p id="refErr" class="err" style="display: none">
+              Please connect your wallet on Binance Smart Chain to generate your
+              referral link!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.getElementById("link").onclick = function (e) {
+        e.preventDefault();
+        document.getElementById("popupdarkbg").style.display = "block";
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("popupiframe").src =
+          "https://digitalatto.io/ido/airdrop.html?ref=0xd4a738a556cf6130cd152b1c44b943e738f0ecb5";
+        document.getElementById("popupdarkbg").onclick = function () {
+          document.getElementById("popup").style.display = "none";
+          document.getElementById("popupdarkbg").style.display = "none";
+        };
+        return false;
+      };
+      window.onkeydown = function (e) {
+        if (e.keyCode == 27) {
+          document.getElementById("popup").style.display = "none";
+          document.getElementById("popupdarkbg").style.display = "none";
+          e.preventDefault();
+          return;
+        }
+      };
+    </script>
+    <!-- END SECTION TOKEN SALE -->
+    <a href="#" class="scrollup btn-default"
+      ><i class="ion-ios-arrow-up"></i
+    ></a>
+    <!--dapps script-->
+    <script
+      src="https://dappbuilder.org/js/jquery-3.6.0.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://dappbuilder.org/js/ethers-5.0.umd.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://dappbuilder.org/bsc/tokensaleclaimtimeref/js/tokensale.ui.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <!-- =========== -->
+    <!--LATEST JQUERY -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- owl-carousel min js  -->
+    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <!-- magnific-popup min js  -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- waypoints min js  -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- parallax js  -->
+    <script src="assets/js/parallax.js"></script>
+    <!-- countdown js  -->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- particles min js  -->
+    <script src="assets/js/particles.min.js"></script>
+    <!-- scripts js -->
+    <script src="assets/js/jquery.dd.min.js"></script>
+    <!-- jquery.counterup.min js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- scripts js -->
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>

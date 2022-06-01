@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="dark">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Log In &lsaquo; Digitalatto &#8212; WordPress</title>
+    <style type="text/css">
+      body.uip-login h1 a {
+        background-image: url("https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/digitalatto.png") !important;
+      }
+    </style>
+    <style type="text/css">
+      body.uip-login::before {
+        background-image: url("https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/dlt-blockchain-network-810x500-1.jpg") !important;
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/digitalatto.png"
+    />
+    <style type="text/css" id="uip-user-custom-css">
+      .user-admin-color-wrap {
+        display: none !important;
+      }
+
+      .metabox-prefs {
+        display: none !important;
+      }
+
+      .user-profile-picture {
+        display: none !important;
+      }
+      .user-display-name-wrap {
+        display: none !important;
+      }
+      .user-url-wrap {
+        display: none !important;
+      }
+      .user-admin-bar-front-wrap {
+        display: none !important;
+      }
+
+      #dashboard-widgets-wrap {
+        display: none !important;
+      }
+    </style>
+    <meta name="robots" content="max-image-preview:large, noindex, noarchive" />
+    <link rel="dns-prefetch" href="//s.w.org" />
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-includes/js/jquery/jquery.min.js?ver=3.6.0"
+      id="jquery-core-js"
+    ></script>
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2"
+      id="jquery-migrate-js"
+    ></script>
+    <link
+      rel="stylesheet"
+      id="dashicons-css"
+      href="https://www.dgtlwallet.com/user-wallet/wp-includes/css/dashicons.min.css?ver=6.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="buttons-css"
+      href="https://www.dgtlwallet.com/user-wallet/wp-includes/css/buttons.min.css?ver=6.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="forms-css"
+      href="https://www.dgtlwallet.com/user-wallet/wp-admin/css/forms.min.css?ver=6.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="l10n-css"
+      href="https://www.dgtlwallet.com/user-wallet/wp-admin/css/l10n.min.css?ver=6.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="login-css"
+      href="https://www.dgtlwallet.com/user-wallet/wp-admin/css/login.min.css?ver=6.0"
+      media="all"
+    />
+    <style id="login-inline-css">
+      :root {
+        --mcwallet-login-logo: url(https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/logo.png);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="llar-login-page-styles-css"
+      href="https://www.dgtlwallet.com/user-wallet/wp-content/plugins/limit-login-attempts-reloaded/assets/css/login-page-styles.css?ver=2.25.3"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="mcwallet-login-css"
+      href="https://www.dgtlwallet.com/user-wallet/wp-content/plugins/multi-currency-wallet-pro/assets/css/login.css?ver=1.1.1447-b5723f"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="uip-font-css"
+      href="https://www.dgtlwallet.com/user-wallet/wp-content/plugins/uipress/assets/css/uip-font.css?ver=2.3.4"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="uip-app-css"
+      href="https://www.dgtlwallet.com/user-wallet/wp-content/plugins/uipress/assets/css/uip-app.css?ver=2.3.4"
+      media="all"
+    />
+    <style id="uip-user-styles" type="text/css">
+      html:not([data-theme="dark"]) {
+      }
+      html[data-theme="dark"] {
+      }
+      html {
+      }
+    </style>
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      href="https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/cropped-digitalatto-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/cropped-digitalatto-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/cropped-digitalatto-180x180.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/cropped-digitalatto-270x270.png"
+    />
+  </head>
+  <body
+    class="login no-js login-action-login wp-core-ui locale-en-us uip-login"
+  >
+    <script type="text/javascript">
+      document.body.className = document.body.className.replace("no-js", "js");
+    </script>
+    <script>
+      async function postData(url = "", data = {}) {
+        // Default options are marked with *
+        const response = await fetch(url, {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          mode: "cors", // no-cors, *cors, same-origin
+          cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: "same-origin", // include, *same-origin, omit
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+          body: JSON.stringify(data), // body data type must match "Content-Type" header
+        });
+        return response.json(); // parses JSON response into native JavaScript objects
+      }
+
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+
+      postData("localhost:8000/user/signin", {
+        email: email,
+        password: password,
+      }).then((data) => {
+        console.log(data); // JSON data parsed by `data.json()` call
+      });
+    </script>
+    <div class="uip-login-wrap">
+      <div id="login">
+        <h1>
+          <a href="https://www.dgtlwallet.com/user-wallet"
+            >Powered by WordPress</a
+          >
+        </h1>
+
+        <form
+          name="loginform"
+          id="loginform"
+          action="./wp-admin/profile.html"
+          method="post"
+        >
+          <p>
+            <label for="user_login">Username or Email Address</label>
+            <input
+              type="text"
+              name="log"
+              id="email"
+              class="input"
+              value=""
+              size="20"
+              autocapitalize="off"
+              autocomplete="username"
+            />
+          </p>
+
+          <div class="user-pass-wrap">
+            <label for="user_pass">Password</label>
+            <div class="wp-pwd">
+              <input
+                type="password"
+                name="pwd"
+                id="password"
+                class="input password-input"
+                value=""
+                size="20"
+                autocomplete="current-password"
+              />
+              <button
+                type="button"
+                class="button button-secondary wp-hide-pw hide-if-no-js"
+                data-toggle="0"
+                aria-label="Show password"
+              >
+                <span
+                  class="dashicons dashicons-visibility"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+          </div>
+          <p class="forgetmenot">
+            <input
+              name="rememberme"
+              type="checkbox"
+              id="rememberme"
+              value="forever"
+            />
+            <label for="rememberme">Remember Me</label>
+          </p>
+          <p class="submit">
+            <a href="./dashboard.html"><input
+              type="button"
+              id="btn"
+              name="wp-submit"
+              class="button button-primary button-large"
+              value="Log In"
+            /></a>
+            <!-- <input type="hidden" name="redirect_to" value="" />
+									<input type="hidden" name="testcookie" value="1" /> -->
+          </p>
+        </form>
+
+        <p id="nav">
+          <a href="./register.html">Register</a> |
+          <a href="./password.html">Lost your password?</a>
+        </p>
+        <script type="text/javascript">
+          function wp_attempt_focus() {
+            setTimeout(function () {
+              try {
+                d = document.getElementById("user_login");
+                d.focus();
+                d.select();
+              } catch (er) {}
+            }, 200);
+          }
+          wp_attempt_focus();
+          if (typeof wpOnload === "function") {
+            wpOnload();
+          }
+        </script>
+        <p id="backtoblog">
+          <a href="/www.dgtlwallet.com/user-wallet/index.html"
+            >&larr; Go to Digitalatto</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- END OF UIP WRAP -->
+    <script id="zxcvbn-async-js-extra">
+      var _zxcvbnSettings = {
+        src: "https:\/\/www.dgtlwallet.com\/user-wallet\/wp-includes\/js\/zxcvbn.min.js",
+      };
+    </script>
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-includes/js/zxcvbn-async.min.js?ver=1.0"
+      id="zxcvbn-async-js"
+    ></script>
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9"
+      id="regenerator-runtime-js"
+    ></script>
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"
+      id="wp-polyfill-js"
+    ></script>
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3"
+      id="wp-hooks-js"
+    ></script>
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94"
+      id="wp-i18n-js"
+    ></script>
+    <script id="wp-i18n-js-after">
+      wp.i18n.setLocaleData({ "text direction\u0004ltr": ["ltr"] });
+    </script>
+    <script id="password-strength-meter-js-extra">
+      var pwsL10n = {
+        unknown: "Password strength unknown",
+        short: "Very weak",
+        bad: "Weak",
+        good: "Medium",
+        strong: "Strong",
+        mismatch: "Mismatch",
+      };
+    </script>
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-admin/js/password-strength-meter.min.js?ver=6.0"
+      id="password-strength-meter-js"
+    ></script>
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-includes/js/underscore.min.js?ver=1.13.3"
+      id="underscore-js"
+    ></script>
+    <script id="wp-util-js-extra">
+      var _wpUtilSettings = {
+        ajax: { url: "\/user-wallet\/wp-admin\/admin-ajax.php" },
+      };
+    </script>
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-includes/js/wp-util.min.js?ver=6.0"
+      id="wp-util-js"
+    ></script>
+    <script id="user-profile-js-extra">
+      var userProfileL10n = { user_id: "0", nonce: "8283064c11" };
+    </script>
+    <script
+      src="https://www.dgtlwallet.com/user-wallet/wp-admin/js/user-profile.min.js?ver=6.0"
+      id="user-profile-js"
+    ></script>
+    <div class="clear"></div>
+  </body>
+  <script>
+    "undefined" === typeof _trfq || (window._trfq = []);
+    "undefined" === typeof _trfd && (window._trfd = []),
+      _trfd.push({ "tccl.baseHost": "secureserver.net" }),
+      _trfd.push(
+        { ap: "cpsh-oh" },
+        { server: "sg2plzcpnl490941" },
+        { id: "8580127" }
+      ); // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+  </script>
+  <script src="https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js"></script>
+</html>

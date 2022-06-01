@@ -1,0 +1,12 @@
+Sitemap: https://digitalatto.com/sitemap.xml
+User-agent: *
+Disallow: /Login
+Disallow: /*/sort/*
+Disallow: /*/range/*
+Disallow: /*/sub/*
+Disallow: /*/var/*
+Disallow: /*/category/*
+Disallow: /*/search/*
+Disallow: /search
+Disallow: /products/checkout
+Disallow: /products/cart

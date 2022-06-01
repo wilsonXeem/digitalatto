@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html class="wp-toolbar"
+	data-theme="dark"uip-toolbar="true"uip-admin-menu="true"uip-admin-theme="true"lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Profile &lsaquo; Digitalatto &#8212; WordPress</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!=='undefined')jQuery(function(){func();});else if(typeof wpOnload!=='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = '/user-wallet/wp-admin/admin-ajax.php',
+	pagenow = 'profile',
+	typenow = '',
+	adminpage = 'profile-php',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<link rel='dns-prefetch' href='//s.w.org' />
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' href='https://www.dgtlwallet.com/user-wallet/wp-admin/load-styles.php?c=0&amp;dir=ltr&amp;load%5Bchunk_0%5D=dashicons,admin-bar,common,forms,dashboard,list-tables,edit,revisions,media,themes,about,nav-menus,wp-pointer,widgets,site-icon,&amp;load%5Bchunk_1%5D=l10n,buttons,wp-auth-check&amp;ver=6.0' media='all' />
+<link rel='stylesheet' id='admin-menu-css'  href='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/uipress/assets/css/uip-blank.css?ver=2.3.4' media='all' />
+<link rel='stylesheet' id='dup-plugin-global-style-css'  href='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/duplicator/assets/css/global_admin_style.css?ver=1.4.6' media='all' />
+<link rel='stylesheet' id='lla-main-css'  href='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/limit-login-attempts-reloaded/assets/css/limit-login-attempts.css?ver=2.25.3' media='all' />
+<link rel='stylesheet' id='mcwallet-admin-css'  href='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/multi-currency-wallet-pro/assets/css/admin.css?ver=1.1.1447-b5723f' media='all' />
+<link rel='stylesheet' id='uip-font-css'  href='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/uipress/assets/css/uip-font.css?ver=2.3.4' media='all' />
+<link rel='stylesheet' id='uip-app-css'  href='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/uipress/assets/css/uip-app.css?ver=2.3.4' media='all' />
+<link rel='stylesheet' id='ame-helper-style-css'  href='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/admin-menu-editor/css/admin.css?ver=20211207' media='all' />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.dgtlwallet.com\/user-wallet\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+
+<script>
+/* <![CDATA[ */
+var userSettings = {"url":"\/user-wallet\/","uid":"653","time":"1653746823","secure":"1"};var _zxcvbnSettings = {"src":"https:\/\/www.dgtlwallet.com\/user-wallet\/wp-includes\/js\/zxcvbn.min.js"};/* ]]> */
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-admin/load-scripts.php?c=0&amp;load%5Bchunk_0%5D=jquery-core,jquery-migrate,utils,zxcvbn-async&amp;ver=6.0'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/admin-menu-editor/js/admin-helpers.js?ver=20160407-2' id='ame-helper-script-js'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/limit-login-attempts-reloaded/assets/js/limit-login-attempts.js?ver=2.25.3' id='lla-main-js'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/uipress/assets/js/uip-vue.js?ver=2.3.4' id='uip-vue-js'></script>
+<link rel="shortcut icon" type="image/jpg" href="https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/digitalatto.png"/><style type="text/css" id="uip-user-custom-css">.user-admin-color-wrap{
+  display:none !important;
+}
+
+.metabox-prefs{
+  display:none !important;
+}
+
+.user-profile-picture{
+  display:none !important;
+}
+.user-display-name-wrap{
+  display:none !important;
+}
+.user-url-wrap{
+  display:none !important;
+}
+.user-admin-bar-front-wrap{
+  display:none !important;
+}
+
+#dashboard-widgets-wrap{
+  display:none !important;
+}
+
+</style><style id="uip-user-styles" type="text/css">html:not([data-theme="dark"]){}html[data-theme="dark"]{}html{}</style><script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#a7aaad","focus":"#72aee6","current":"#fff"}};</script>
+	<link id="wp-admin-canonical" rel="canonical" href="https://www.dgtlwallet.com/user-wallet/wp-admin/profile.php" />
+	<script>
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( 'wp-admin-canonical' ).href + window.location.hash );
+		}
+	</script>
+	<link rel="icon" href="https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/cropped-digitalatto-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/cropped-digitalatto-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/cropped-digitalatto-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.dgtlwallet.com/user-wallet/wp-content/uploads/2022/02/cropped-digitalatto-270x270.png" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0"><style media="print">#wpadminbar { display:none; }</style>
+	  
+  <div id="uip-toolbar" class="uip-padding-s uip-border-box uip-body-font">
+          <div v-if="loading && !isSmallScreen" class="uip-flex">
+        <div >
+          <svg class="uip-margin-right-s" height="34" width="75">
+            <rect width="75" height="34" rx="5" fill="#bbbbbb2e"/>
+          </svg>
+        </div>
+        <div >
+          <svg class="uip-margin-right-s" height="34" width="75">
+            <rect width="75" height="34" rx="5" fill="#bbbbbb2e"/>
+          </svg>
+        </div>
+        <div class="uip-flex-grow">
+          <svg class="uip-margin-right-s" height="34" width="75">
+            <rect width="75" height="34" rx="5" fill="#bbbbbb2e"/>
+          </svg>
+        </div>
+        <div class="">
+          <svg class="uip-margin-right-s" height="34" width="50">
+            <rect width="75" height="34" rx="5" fill="#bbbbbb2e"/>
+          </svg>
+        </div>
+        <div class="">
+          <svg class="uip-margin-right-s" height="34" width="50">
+            <rect width="75" height="34" rx="5" fill="#bbbbbb2e"/>
+          </svg>
+        </div>
+        <div class="">
+          <svg class="uip-margin-right-s" height="34" width="50">
+            <rect width="75" height="34" rx="5" fill="#bbbbbb2e"/>
+          </svg>
+        </div>
+        <div class="">
+          <svg height="34" width="34"><circle cx="17" cy="17" r="17" stroke-width="0" fill="#bbbbbb2e" /></svg>
+        </div>
+      </div>
+        <div id="uip-toolbar-content" v-if="!loading"> 
+      
+      
+      <div v-if="!loading" class="uip-flex">
+        <div class="uip-flex uip-flex-center uip-margin-right-xxs uip-hidden" v-if="!defaults.front && isSmallScreen()" :class="{'uip-nothidden' : !defaults.front && isSmallScreen()}">
+          <a href="#" class="material-icons-outlined uip-background-icon uip-padding-xxs uip-border-round hover:uip-background-grey uip-cursor-pointer uip-toolbar-link uip-no-underline uip-no-outline uip-margin-right-xs" @click="toggleMenu()">menu_open</a>
+        </div>
+        <div class="uip-flex uip-flex-center" v-if="defaults.front || isSmallScreen()">
+          <toolbar-logo :defaults="defaults" :options="masterPrefs" :translations="translations" :preferences="userPreferences"></toolbar-logo>
+        </div>
+        <div class="uip-legacy-admin uip-flex-grow" v-if="!isSmallScreen()">
+          <div class="uip-hidden" 
+          :class="{'uip-nothidden' : showLegacy()}" >
+            		<div id="wpadminbar" class="nojq nojs">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id='wp-admin-bar-root-default' class="ab-top-menu"><li id='wp-admin-bar-menu-toggle'><a class='ab-item' href='#'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">Menu</span></a></li><li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://www.dgtlwallet.com/user-wallet/wp-admin/about.php'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li id='wp-admin-bar-about'><a class='ab-item' href='https://www.dgtlwallet.com/user-wallet/wp-admin/about.php'>About WordPress</a></li></ul><ul id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li id='wp-admin-bar-wporg'><a class='ab-item' href='https://wordpress.org/'>WordPress.org</a></li><li id='wp-admin-bar-documentation'><a class='ab-item' href='https://wordpress.org/support/'>Documentation</a></li><li id='wp-admin-bar-support-forums'><a class='ab-item' href='https://wordpress.org/support/forums/'>Support</a></li><li id='wp-admin-bar-feedback'><a class='ab-item' href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li></ul></div></li><li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://www.dgtlwallet.com/user-wallet/'>Digitalatto</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-site-name-default' class="ab-submenu"><li id='wp-admin-bar-view-site'><a class='ab-item' href='https://www.dgtlwallet.com/user-wallet/'>Visit Site</a></li></ul></div></li></ul><ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true" href='https://www.dgtlwallet.com/user-wallet/wp-admin/profile.php'>Howdy, <span class="display-name">Wilson</span><img alt='' src='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=26&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy'/></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-user-actions' class="ab-submenu"><li id='wp-admin-bar-user-info'><a class='ab-item' tabindex="-1" href='https://www.dgtlwallet.com/user-wallet/wp-admin/profile.php'><img alt='' src='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy'/><span class='display-name'>Wilson</span></a></li><li id='wp-admin-bar-edit-profile'><a class='ab-item' href='https://www.dgtlwallet.com/user-wallet/wp-admin/profile.php'>Edit Profile</a></li><li id='wp-admin-bar-logout'><a class='ab-item' href='https://www.dgtlwallet.com/user-wallet/profile/?action=logout&#038;_wpnonce=0328412247'>Log Out</a></li></ul></div></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="https://www.dgtlwallet.com/user-wallet/profile/?action=logout&#038;_wpnonce=0328412247">Log Out</a>
+					</div>
+
+		          </div>
+        </div>
+        <div class="uip-legacy-admin uip-flex-grow uip-hidden" :class="{'uip-nothidden' : showLegacy()}" v-if="isSmallScreen()">
+          <uip-dropdown type="icon" icon="bolt" pos="full-screen" size="small">
+            		<div id="wpadminbar" class="nojq nojs">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id='wp-admin-bar-root-default' class="ab-top-menu"><li id='wp-admin-bar-menu-toggle'><a class='ab-item' href='#'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">Menu</span></a></li><li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://www.dgtlwallet.com/user-wallet/wp-admin/about.php'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li id='wp-admin-bar-about'><a class='ab-item' href='https://www.dgtlwallet.com/user-wallet/wp-admin/about.php'>About WordPress</a></li></ul><ul id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li id='wp-admin-bar-wporg'><a class='ab-item' href='https://wordpress.org/'>WordPress.org</a></li><li id='wp-admin-bar-documentation'><a class='ab-item' href='https://wordpress.org/support/'>Documentation</a></li><li id='wp-admin-bar-support-forums'><a class='ab-item' href='https://wordpress.org/support/forums/'>Support</a></li><li id='wp-admin-bar-feedback'><a class='ab-item' href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li></ul></div></li><li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://www.dgtlwallet.com/user-wallet/'>Digitalatto</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-site-name-default' class="ab-submenu"><li id='wp-admin-bar-view-site'><a class='ab-item' href='https://www.dgtlwallet.com/user-wallet/'>Visit Site</a></li></ul></div></li></ul><ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true" href='https://www.dgtlwallet.com/user-wallet/wp-admin/profile.php'>Howdy, <span class="display-name">Wilson</span><img alt='' src='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=26&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy'/></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-user-actions' class="ab-submenu"><li id='wp-admin-bar-user-info'><a class='ab-item' tabindex="-1" href='https://www.dgtlwallet.com/user-wallet/wp-admin/profile.php'><img alt='' src='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy'/><span class='display-name'>Wilson</span></a></li><li id='wp-admin-bar-edit-profile'><a class='ab-item' href='https://www.dgtlwallet.com/user-wallet/wp-admin/profile.php'>Edit Profile</a></li><li id='wp-admin-bar-logout'><a class='ab-item' href='https://www.dgtlwallet.com/user-wallet/profile/?action=logout&#038;_wpnonce=0328412247'>Log Out</a></li></ul></div></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="https://www.dgtlwallet.com/user-wallet/profile/?action=logout&#038;_wpnonce=0328412247">Log Out</a>
+					</div>
+
+		          </uip-dropdown>
+        </div>
+        
+        <div class="uip-flex uip-flex-center" >
+          <toolbar-search :defaults="defaults" :options="masterPrefs" :translations="translations" :preferences="userPreferences"></toolbar-search>
+        </div>
+        <div class="uip-flex uip-flex-center">
+          <toolbar-links :defaults="defaults" :options="masterPrefs" :translations="translations" :preferences="userPreferences"></toolbar-links>
+        </div>
+        <div class="uip-flex uip-flex-center">
+          <toolbar-create :defaults="defaults" :options="masterPrefs" :translations="translations" :preferences="userPreferences"></toolbar-create>
+        </div>
+        <div class="uip-flex uip-flex-center">
+          <toolbar-offcanvas :defaults="defaults" :options="masterPrefs" :translations="translations" :preferences="userPreferences"></toolbar-create>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </head>
+<body class="wp-admin wp-core-ui no-js profile-php auto-fold admin-bar branch-6 version-6-0 admin-color-fresh locale-en-us no-customize-support no-svg">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+
+<div id="wpwrap">
+
+<div id="adminmenumain" role="navigation" aria-label="Main menu">
+<a href="#wpbody-content" class="screen-reader-shortcut">Skip to main content</a>
+<a href="#wp-toolbar" class="screen-reader-shortcut">Skip to toolbar</a>
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap">
+<ul id="adminmenu">
+
+
+	<li class="wp-first-item wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first menu-top-last" id="menu-dashboard">
+	<a href='index.php' class="wp-first-item wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first menu-top-last" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-dashboard' aria-hidden='true'><br /></div><div class='wp-menu-name'>Dashboard</div></a></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="current menu-top menu-icon-users menu-top-first menu-top-last" id="menu-users">
+	<a href='profile.php' class="current menu-top menu-icon-users menu-top-first menu-top-last" aria-current="page"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-users' aria-hidden='true'><br /></div><div class='wp-menu-name'>Profile</div></a></li><li id="collapse-menu" class="hide-if-no-js"><button type="button" id="collapse-button" aria-label="Collapse Main menu" aria-expanded="true"><span class="collapse-button-icon" aria-hidden="true"></span><span class="collapse-button-label">Collapse menu</span></button></li>    <script id="uip-admin-menu-const">
+         const uipMasterMenu = {"self":"profile.php","parent_file":"profile.php","submenu_file":"profile.php","plugin_page":null,"typenow":"","menu":[{"0":"Dashboard","1":"exist","2":"index.php","3":"","4":"menu-top menu-top-first menu-icon-dashboard menu-top-first menu-top-last","5":"menu-dashboard","6":"dashicons-dashboard","active":false,"id":"menu-dashboard","name":"Dashboard","icon":"<span class=\"material-icons-outlined\">grid_view<\/span>","classes":"wp-first-item wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first menu-top-last","type":"menu","url":"index.php"},{"0":"","1":"exist","2":"separator_6","3":"","4":"wp-menu-separator","5":"","6":"dashicons-admin-generic","active":false,"type":"sep"},{"0":"Profile","1":"exist","2":"profile.php","3":"","4":"menu-top menu-icon-users menu-top-first menu-top-last","5":"menu-users","6":"dashicons-admin-users","active":true,"id":"menu-users","name":"Profile","icon":"<span class=\"material-icons-outlined\">people<\/span>","classes":"current menu-top menu-icon-users menu-top-first menu-top-last","type":"menu","url":"profile.php"}],"submenu":[],"prefs":{"darkmode":true}}    </script>
+    	<div id="uip-admin-menu" class="uip-flex uip-flex-column">
+	</div>
+	
+	</ul>
+</div>
+</div>
+<div id="wpcontent">
+
+
+<div id="wpbody" role="main">
+
+<div id="wpbody-content">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden" tabindex="-1" aria-label="Contextual Help Tab">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+						
+							<li id="tab-link-overview" class="active">
+								<a href="#tab-panel-overview" aria-controls="tab-panel-overview">
+									Overview								</a>
+							</li>
+													</ul>
+					</div>
+
+										<div class="contextual-help-sidebar">
+						<p><strong>For more information:</strong></p><p><a href="https://wordpress.org/support/article/users-your-profile-screen/">Documentation on User Profiles</a></p><p><a href="https://wordpress.org/support/">Support</a></p>					</div>
+					
+					<div class="contextual-help-tabs-wrap">
+						
+							<div id="tab-panel-overview" class="help-tab-content active">
+								<p>Your profile contains information about you (your &#8220;account&#8221;) as well as some personal options related to using WordPress.</p><p>You can change your password, turn on keyboard shortcuts, change the color scheme of your WordPress administration screens, and turn off the WYSIWYG (Visual) editor, among other things. You can hide the Toolbar (formerly called the Admin Bar) from the front end of your site, however it cannot be disabled on the admin screens.</p><p>You can select the language you wish to use while using the WordPress administration screen without affecting the language site visitors see.</p><p>Your username cannot be changed, but you can use other fields to enter your real name or a nickname, and change which name to display on your posts.</p><p>You can log out of other devices, such as your phone or a public computer, by clicking the Log Out Everywhere Else button.</p><p>Required fields are indicated; the rest are optional. Profile information will only be displayed if your theme is set up to do so.</p><p>Remember to click the Update Profile button when you are finished.</p>							</div>
+												</div>
+				</div>
+			</div>
+				</div>
+				<div id="screen-meta-links">
+					<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<button type="button" id="contextual-help-link" class="button show-settings" aria-controls="contextual-help-wrap" aria-expanded="false">Help</button>
+			</div>
+				</div>
+		
+		
+		
+		
+		
+		<div class="wrap" id="profile-page">
+			<h1 class="wp-heading-inline">
+					Profile			</h1>
+
+			
+			<hr class="wp-header-end">
+
+			<form id="your-profile" action="https://www.dgtlwallet.com/user-wallet/wp-admin/profile.php" method="post" novalidate="novalidate"
+				enctype="multipart/form-data"				>
+				<input type="hidden" id="_wpnonce" name="_wpnonce" value="b1940364ae" /><input type="hidden" name="_wp_http_referer" value="/user-wallet/wp-admin/profile.php" />								<p>
+					<input type="hidden" name="from" value="profile" />
+					<input type="hidden" name="checkuser_id" value="653" />
+				</p>
+
+				<h2>Personal Options</h2>
+
+				<table class="form-table" role="presentation">
+					
+					
+					
+										<tr class="user-admin-color-wrap">
+						<th scope="row">Admin Color Scheme</th>
+						<td>
+								<fieldset id="color-picker" class="scheme-list">
+		<legend class="screen-reader-text"><span>Admin Color Scheme</span></legend>
+		<input type="hidden" id="color-nonce" name="color-nonce" value="815198e01b" />			<div class="color-option selected">
+				<input name="admin_color" id="admin_color_fresh" type="radio" value="fresh" class="tog"  checked='checked' />
+				<input type="hidden" class="css_url" value="" />
+				<input type="hidden" class="icon_colors" value="{&quot;icons&quot;:{&quot;base&quot;:&quot;#a7aaad&quot;,&quot;focus&quot;:&quot;#72aee6&quot;,&quot;current&quot;:&quot;#fff&quot;}}" />
+				<label for="admin_color_fresh">Default</label>
+				<table class="color-palette">
+					<tr>
+											<td style="background-color: #1d2327">&nbsp;</td>
+												<td style="background-color: #2c3338">&nbsp;</td>
+												<td style="background-color: #2271b1">&nbsp;</td>
+												<td style="background-color: #72aee6">&nbsp;</td>
+											</tr>
+				</table>
+			</div>
+						<div class="color-option ">
+				<input name="admin_color" id="admin_color_light" type="radio" value="light" class="tog"  />
+				<input type="hidden" class="css_url" value="https://www.dgtlwallet.com/user-wallet/wp-admin/css/colors/light/colors.min.css" />
+				<input type="hidden" class="icon_colors" value="{&quot;icons&quot;:{&quot;base&quot;:&quot;#999&quot;,&quot;focus&quot;:&quot;#ccc&quot;,&quot;current&quot;:&quot;#ccc&quot;}}" />
+				<label for="admin_color_light">Light</label>
+				<table class="color-palette">
+					<tr>
+											<td style="background-color: #e5e5e5">&nbsp;</td>
+												<td style="background-color: #999">&nbsp;</td>
+												<td style="background-color: #d64e07">&nbsp;</td>
+												<td style="background-color: #04a4cc">&nbsp;</td>
+											</tr>
+				</table>
+			</div>
+						<div class="color-option ">
+				<input name="admin_color" id="admin_color_modern" type="radio" value="modern" class="tog"  />
+				<input type="hidden" class="css_url" value="https://www.dgtlwallet.com/user-wallet/wp-admin/css/colors/modern/colors.min.css" />
+				<input type="hidden" class="icon_colors" value="{&quot;icons&quot;:{&quot;base&quot;:&quot;#f3f1f1&quot;,&quot;focus&quot;:&quot;#fff&quot;,&quot;current&quot;:&quot;#fff&quot;}}" />
+				<label for="admin_color_modern">Modern</label>
+				<table class="color-palette">
+					<tr>
+											<td style="background-color: #1e1e1e">&nbsp;</td>
+												<td style="background-color: #3858e9">&nbsp;</td>
+												<td style="background-color: #33f078">&nbsp;</td>
+											</tr>
+				</table>
+			</div>
+						<div class="color-option ">
+				<input name="admin_color" id="admin_color_blue" type="radio" value="blue" class="tog"  />
+				<input type="hidden" class="css_url" value="https://www.dgtlwallet.com/user-wallet/wp-admin/css/colors/blue/colors.min.css" />
+				<input type="hidden" class="icon_colors" value="{&quot;icons&quot;:{&quot;base&quot;:&quot;#e5f8ff&quot;,&quot;focus&quot;:&quot;#fff&quot;,&quot;current&quot;:&quot;#fff&quot;}}" />
+				<label for="admin_color_blue">Blue</label>
+				<table class="color-palette">
+					<tr>
+											<td style="background-color: #096484">&nbsp;</td>
+												<td style="background-color: #4796b3">&nbsp;</td>
+												<td style="background-color: #52accc">&nbsp;</td>
+												<td style="background-color: #74B6CE">&nbsp;</td>
+											</tr>
+				</table>
+			</div>
+						<div class="color-option ">
+				<input name="admin_color" id="admin_color_coffee" type="radio" value="coffee" class="tog"  />
+				<input type="hidden" class="css_url" value="https://www.dgtlwallet.com/user-wallet/wp-admin/css/colors/coffee/colors.min.css" />
+				<input type="hidden" class="icon_colors" value="{&quot;icons&quot;:{&quot;base&quot;:&quot;#f3f2f1&quot;,&quot;focus&quot;:&quot;#fff&quot;,&quot;current&quot;:&quot;#fff&quot;}}" />
+				<label for="admin_color_coffee">Coffee</label>
+				<table class="color-palette">
+					<tr>
+											<td style="background-color: #46403c">&nbsp;</td>
+												<td style="background-color: #59524c">&nbsp;</td>
+												<td style="background-color: #c7a589">&nbsp;</td>
+												<td style="background-color: #9ea476">&nbsp;</td>
+											</tr>
+				</table>
+			</div>
+						<div class="color-option ">
+				<input name="admin_color" id="admin_color_ectoplasm" type="radio" value="ectoplasm" class="tog"  />
+				<input type="hidden" class="css_url" value="https://www.dgtlwallet.com/user-wallet/wp-admin/css/colors/ectoplasm/colors.min.css" />
+				<input type="hidden" class="icon_colors" value="{&quot;icons&quot;:{&quot;base&quot;:&quot;#ece6f6&quot;,&quot;focus&quot;:&quot;#fff&quot;,&quot;current&quot;:&quot;#fff&quot;}}" />
+				<label for="admin_color_ectoplasm">Ectoplasm</label>
+				<table class="color-palette">
+					<tr>
+											<td style="background-color: #413256">&nbsp;</td>
+												<td style="background-color: #523f6d">&nbsp;</td>
+												<td style="background-color: #a3b745">&nbsp;</td>
+												<td style="background-color: #d46f15">&nbsp;</td>
+											</tr>
+				</table>
+			</div>
+						<div class="color-option ">
+				<input name="admin_color" id="admin_color_midnight" type="radio" value="midnight" class="tog"  />
+				<input type="hidden" class="css_url" value="https://www.dgtlwallet.com/user-wallet/wp-admin/css/colors/midnight/colors.min.css" />
+				<input type="hidden" class="icon_colors" value="{&quot;icons&quot;:{&quot;base&quot;:&quot;#f1f2f3&quot;,&quot;focus&quot;:&quot;#fff&quot;,&quot;current&quot;:&quot;#fff&quot;}}" />
+				<label for="admin_color_midnight">Midnight</label>
+				<table class="color-palette">
+					<tr>
+											<td style="background-color: #25282b">&nbsp;</td>
+												<td style="background-color: #363b3f">&nbsp;</td>
+												<td style="background-color: #69a8bb">&nbsp;</td>
+												<td style="background-color: #e14d43">&nbsp;</td>
+											</tr>
+				</table>
+			</div>
+						<div class="color-option ">
+				<input name="admin_color" id="admin_color_ocean" type="radio" value="ocean" class="tog"  />
+				<input type="hidden" class="css_url" value="https://www.dgtlwallet.com/user-wallet/wp-admin/css/colors/ocean/colors.min.css" />
+				<input type="hidden" class="icon_colors" value="{&quot;icons&quot;:{&quot;base&quot;:&quot;#f2fcff&quot;,&quot;focus&quot;:&quot;#fff&quot;,&quot;current&quot;:&quot;#fff&quot;}}" />
+				<label for="admin_color_ocean">Ocean</label>
+				<table class="color-palette">
+					<tr>
+											<td style="background-color: #627c83">&nbsp;</td>
+												<td style="background-color: #738e96">&nbsp;</td>
+												<td style="background-color: #9ebaa0">&nbsp;</td>
+												<td style="background-color: #aa9d88">&nbsp;</td>
+											</tr>
+				</table>
+			</div>
+						<div class="color-option ">
+				<input name="admin_color" id="admin_color_sunrise" type="radio" value="sunrise" class="tog"  />
+				<input type="hidden" class="css_url" value="https://www.dgtlwallet.com/user-wallet/wp-admin/css/colors/sunrise/colors.min.css" />
+				<input type="hidden" class="icon_colors" value="{&quot;icons&quot;:{&quot;base&quot;:&quot;#f3f1f1&quot;,&quot;focus&quot;:&quot;#fff&quot;,&quot;current&quot;:&quot;#fff&quot;}}" />
+				<label for="admin_color_sunrise">Sunrise</label>
+				<table class="color-palette">
+					<tr>
+											<td style="background-color: #b43c38">&nbsp;</td>
+												<td style="background-color: #cf4944">&nbsp;</td>
+												<td style="background-color: #dd823b">&nbsp;</td>
+												<td style="background-color: #ccaf0b">&nbsp;</td>
+											</tr>
+				</table>
+			</div>
+				</fieldset>
+							</td>
+					</tr>
+					
+					
+					<tr class="show-admin-bar user-admin-bar-front-wrap">
+						<th scope="row">Toolbar</th>
+						<td>
+							<label for="admin_bar_front">
+								<input name="admin_bar_front" type="checkbox" id="admin_bar_front" value="1" checked='checked' />
+								Show Toolbar when viewing site							</label><br />
+						</td>
+					</tr>
+
+										
+					
+				</table>
+				
+				<h2>Name</h2>
+
+				<table class="form-table" role="presentation">
+					<tr class="user-user-login-wrap">
+						<th><label for="user_login">Username</label></th>
+						<td><input type="text" name="user_login" id="user_login" value="Wilson" disabled="disabled" class="regular-text" /> <span class="description">Usernames cannot be changed.</span></td>
+					</tr>
+
+					
+					
+					<tr class="user-first-name-wrap">
+						<th><label for="first_name">First Name</label></th>
+						<td><input type="text" name="first_name" id="first_name" value="" class="regular-text" /></td>
+					</tr>
+
+					<tr class="user-last-name-wrap">
+						<th><label for="last_name">Last Name</label></th>
+						<td><input type="text" name="last_name" id="last_name" value="" class="regular-text" /></td>
+					</tr>
+
+					<tr class="user-nickname-wrap">
+						<th><label for="nickname">Nickname <span class="description">(required)</span></label></th>
+						<td><input type="text" name="nickname" id="nickname" value="Wilson" class="regular-text" /></td>
+					</tr>
+
+					<tr class="user-display-name-wrap">
+						<th>
+							<label for="display_name">Display name publicly as</label>
+						</th>
+						<td>
+							<select name="display_name" id="display_name">
+																									<option  selected='selected'>Wilson</option>
+															</select>
+						</td>
+					</tr>
+				</table>
+
+				<h2>Contact Info</h2>
+
+				<table class="form-table" role="presentation">
+					<tr class="user-email-wrap">
+						<th><label for="email">Email <span class="description">(required)</span></label></th>
+						<td>
+							<input type="email" name="email" id="email" aria-describedby="email-description" value="wilsonzimthamaha@gmail.com" class="regular-text ltr" />
+															<p class="description" id="email-description">
+									If you change this, an email will be sent at your new address to confirm it. <strong>The new address will not become active until confirmed.</strong>								</p>
+							
+																				</td>
+					</tr>
+
+					<tr class="user-url-wrap">
+						<th><label for="url">Website</label></th>
+						<td><input type="url" name="url" id="url" value="" class="regular-text code" /></td>
+					</tr>
+
+									</table>
+
+				<h2>About Yourself</h2>
+
+				<table class="form-table" role="presentation">
+					<tr class="user-description-wrap">
+						<th><label for="description">Biographical Info</label></th>
+						<td><textarea name="description" id="description" rows="5" cols="30"></textarea>
+						<p class="description">Share a little biographical information to fill out your profile. This may be shown publicly.</p></td>
+					</tr>
+
+											<tr class="user-profile-picture">
+							<th>Profile Picture</th>
+							<td>
+								<img alt='' src='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=96&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=192&#038;d=mm&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' loading='lazy'/>								<p class="description">
+									<a href="https://en.gravatar.com/">You can change your profile picture on Gravatar</a>.								</p>
+							</td>
+						</tr>
+																					</table>
+
+						<h2>Account Management</h2>
+
+						<table class="form-table" role="presentation">
+							<tr id="password" class="user-pass1-wrap">
+								<th><label for="pass1">New Password</label></th>
+								<td>
+									<input class="hidden" value=" " /><!-- #24364 workaround -->
+									<button type="button" class="button wp-generate-pw hide-if-no-js" aria-expanded="false">Set New Password</button>
+									<div class="wp-pwd hide-if-js">
+										<span class="password-input-wrapper">
+											<input type="password" name="pass1" id="pass1" class="regular-text" value="" autocomplete="new-password" data-pw="j@u5*MMdEtdSs67463^@SyS@" aria-describedby="pass-strength-result" />
+										</span>
+										<button type="button" class="button wp-hide-pw hide-if-no-js" data-toggle="0" aria-label="Hide password">
+											<span class="dashicons dashicons-hidden" aria-hidden="true"></span>
+											<span class="text">Hide</span>
+										</button>
+										<button type="button" class="button wp-cancel-pw hide-if-no-js" data-toggle="0" aria-label="Cancel password change">
+											<span class="dashicons dashicons-no" aria-hidden="true"></span>
+											<span class="text">Cancel</span>
+										</button>
+										<div style="display:none" id="pass-strength-result" aria-live="polite"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="user-pass2-wrap hide-if-js">
+								<th scope="row"><label for="pass2">Repeat New Password</label></th>
+								<td>
+								<input name="pass2" type="password" id="pass2" class="regular-text" value="" autocomplete="new-password" aria-describedby="pass2-desc" />
+																			<p class="description" id="pass2-desc">Type your new password again.</p>
+																	</td>
+							</tr>
+							<tr class="pw-weak">
+								<th>Confirm Password</th>
+								<td>
+									<label>
+										<input type="checkbox" name="pw_weak" class="pw-checkbox" />
+										<span id="pw-weak-text-label">Confirm use of weak password</span>
+									</label>
+								</td>
+							</tr>
+							
+														
+															<tr class="user-sessions-wrap hide-if-no-js">
+									<th>Sessions</th>
+									<td aria-live="assertive">
+										<div class="destroy-sessions"><button type="button" disabled class="button">Log Out Everywhere Else</button></div>
+										<p class="description">
+											You are only logged in at this location.										</p>
+									</td>
+								</tr>
+													</table>
+
+											<div class="application-passwords hide-if-no-js" id="application-passwords-section">
+							<h2>Application Passwords</h2>
+							<p>Application passwords allow authentication via non-interactive systems, such as XML-RPC or the REST API, without providing your actual password. Application passwords can be easily revoked. They cannot be used for traditional logins to your website.</p>
+															
+																	<div class="create-application-password form-wrap">
+										<div class="form-field">
+											<label for="new_application_password_name">New Application Password Name</label>
+											<input type="text" size="30" id="new_application_password_name" name="new_application_password_name" class="input" aria-required="true" aria-describedby="new_application_password_name_desc" />
+											<p class="description" id="new_application_password_name_desc">Required to create an Application Password, but not to update the user.</p>
+										</div>
+
+										
+										<button type="button" name="do_new_application_password" id="do_new_application_password" class="button button-secondary">Add New Application Password</button>
+									</div>
+								
+								<div class="application-passwords-list-table-wrapper">
+											<div class="tablenav top">
+						<div class="alignleft actions bulkactions">
+							</div>
+						<br class="clear" />
+		</div>
+		<table class="wp-list-table widefat fixed striped table-view-list application-passwords-user">
+	<thead>
+	<tr>
+		<th scope="col" id='name' class='manage-column column-name column-primary'>Name</th><th scope="col" id='created' class='manage-column column-created'>Created</th><th scope="col" id='last_used' class='manage-column column-last_used'>Last Used</th><th scope="col" id='last_ip' class='manage-column column-last_ip'>Last IP</th><th scope="col" id='revoke' class='manage-column column-revoke'>Revoke</th>	</tr>
+	</thead>
+
+	<tbody id="the-list"
+				>
+		<tr class="no-items"><td class="colspanchange" colspan="5">No items found.</td></tr>	</tbody>
+
+	<tfoot>
+	<tr>
+		<th scope="col"  class='manage-column column-name column-primary'>Name</th><th scope="col"  class='manage-column column-created'>Created</th><th scope="col"  class='manage-column column-last_used'>Last Used</th><th scope="col"  class='manage-column column-last_ip'>Last IP</th><th scope="col"  class='manage-column column-revoke'>Revoke</th>	</tr>
+	</tfoot>
+
+</table>
+				<div class="tablenav bottom">
+							<div class="alignright">
+					<button type="button" name="revoke-all-application-passwords" id="revoke-all-application-passwords" class="button delete">Revoke all application passwords</button>
+				</div>
+						<div class="alignleft actions bulkactions">
+							</div>
+						<br class="clear" />
+		</div>
+										</div>
+													</div>
+					
+						<br>
+	<h2>Wallet info</h2>
+
+	<div class="notice notice-error inline notice-alt">
+		<p>Don&#039;t send funds to these addresses! Ask address from the user directly, be sure he has saved his 12 words seed phrase!</p>
+	</div>
+
+			<h2>Backup</h2>
+		<table class="form-table mcwallet-form-table widefat striped" role="presentation">
+			<tbody>
+				<tr class="user-description-wrap">
+					<th>Backup Info</th>
+					<td>
+													<p>This parameter is currently empty.</p>
+											</td>
+				</tr>
+			</tbody>
+		</table>
+			<div id="simple-local-avatar-section">
+			<h3>Avatar</h3>
+
+			<table class="form-table">
+				<tr class="upload-avatar-row">
+					<th scope="row"><label for="simple-local-avatar">Upload Avatar</label></th>
+					<td style="width: 50px;" id="simple-local-avatar-photo">
+						<img alt='' src='https://secure.gravatar.com/avatar/f415fee077895d3a8643d5f860946354?s=96&#038;d=mm' class='avatar avatar-96 photo' height='96' width='96' loading='lazy' />					</td>
+					<td>
+						<input type="hidden" id="_simple_local_avatar_nonce" name="_simple_local_avatar_nonce" value="b9abb53adb" />															<p style="display: inline-block; width: 26em;">
+									<span class="description">Choose an image from your computer:</span><br />
+									<input type="file" name="simple-local-avatar" id="simple-local-avatar" class="standard-text" />
+									<span class="spinner" id="simple-local-avatar-spinner"></span>
+								</p>
+														<p>
+																<a href="/user-wallet/wp-admin/profile.php?action=remove-simple-local-avatar&#038;user_id=653&#038;_wpnonce=81021c0c93" class="button item-delete submitdelete deletion" id="simple-local-avatar-remove"  style="display:none;">
+									Delete local avatar								</a>
+							</p>
+												</td>
+				</tr>
+				<tr class="ratings-row">
+					<th scope="row">Rating</th>
+					<td colspan="2">
+						<fieldset id="simple-local-avatar-ratings"  disabled='disabled'>
+							<legend class="screen-reader-text"><span>Rating</span></legend>
+							
+	<label><input type='radio' name='simple_local_avatar_rating' value='G'  checked='checked'/>G &#8212; Suitable for all audiences</label><br />
+	<label><input type='radio' name='simple_local_avatar_rating' value='PG' />PG &#8212; Possibly offensive, usually for audiences 13 and above</label><br />
+	<label><input type='radio' name='simple_local_avatar_rating' value='R' />R &#8212; Intended for adult audiences above 17</label><br />
+	<label><input type='radio' name='simple_local_avatar_rating' value='X' />X &#8212; Even more mature than above</label><br />							<p class="description">If the local avatar is inappropriate for this site, Gravatar will be attempted.</p>
+						</fieldset>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+					
+				
+				<input type="hidden" name="action" value="update" />
+				<input type="hidden" name="user_id" id="user_id" value="653" />
+
+				<p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="Update Profile"  /></p>
+			</form>
+		</div>
+		<script type="text/javascript">
+	if (window.location.hash == '#password') {
+		document.getElementById('pass1').focus();
+	}
+</script>
+
+	<script type="text/html" id="tmpl-new-application-password">
+		<div class="notice notice-success is-dismissible new-application-password-notice" role="alert" tabindex="-1">
+			<p class="application-password-display">
+				<label for="new-application-password-value">
+					Your new password for <strong>{{ data.name }}</strong> is:				</label>
+				<input id="new-application-password-value" type="text" class="code" readonly="readonly" value="{{ data.password }}" />
+			</p>
+			<p>Be sure to save this in a safe location. You will not be able to retrieve it.</p>
+			<button type="button" class="notice-dismiss">
+				<span class="screen-reader-text">Dismiss this notice.</span>
+			</button>
+		</div>
+	</script>
+
+	<script type="text/html" id="tmpl-application-password-row">
+		<tr data-uuid="{{ data.uuid }}"><td class="name column-name has-row-actions column-primary" data-colname="Name">{{ data.name }}<button type="button" class="toggle-row"><span class="screen-reader-text">Show more details</span></button></td><td class="created column-created" data-colname="Created"><# print( wp.date.dateI18n( "F j, Y", data.created ) ) #></td><td class="last_used column-last_used" data-colname="Last Used"><# print( data.last_used !== null ? wp.date.dateI18n( "F j, Y", data.last_used ) : '—' ) #></td><td class="last_ip column-last_ip" data-colname="Last IP">{{ data.last_ip || '—' }}</td><td class="revoke column-revoke" data-colname="Revoke"><button type="button" class="button delete" aria-label="Revoke &quot;{{ data.name }}&quot;">Revoke</button></td></tr>	</script>
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="wpfooter" role="contentinfo">
+		<p id="footer-left" class="alignleft">
+			</p>
+	<p id="footer-upgrade" class="alignright">
+			</p>
+	<div class="clear"></div>
+</div>
+	<div id="wp-auth-check-wrap" class="hidden">
+	<div id="wp-auth-check-bg"></div>
+	<div id="wp-auth-check">
+	<button type="button" class="wp-auth-check-close button-link"><span class="screen-reader-text">Close dialog</span></button>
+			<div id="wp-auth-check-form" class="loading" data-src="https://www.dgtlwallet.com/user-wallet/profile/?interim-login=1&#038;wp_lang=en_US"></div>
+			<div class="wp-auth-fallback">
+		<p><b class="wp-auth-fallback-expired" tabindex="0">Session expired</b></p>
+		<p><a href="https://www.dgtlwallet.com/user-wallet/profile/" target="_blank">Please log in again.</a>
+		The login page will open in a new tab. After logging in you can close it and return to this page.</p>
+	</div>
+	</div>
+	</div>
+	<script src='https://www.dgtlwallet.com/user-wallet/wp-admin/load-scripts.php?c=0&amp;load%5Bchunk_0%5D=hoverIntent,regenerator-runtime,wp-polyfill,wp-hooks&amp;ver=6.0'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-admin/js/common.min.js?ver=6.0' id='common-js'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-includes/js/hoverintent-js.min.js?ver=2.2.1' id='hoverintent-js-js'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-includes/js/admin-bar.min.js?ver=6.0' id='admin-bar-js'></script>
+<script id='password-strength-meter-js-extra'>
+var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-admin/js/password-strength-meter.min.js?ver=6.0' id='password-strength-meter-js'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-includes/js/underscore.min.js?ver=1.13.3' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/user-wallet\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-includes/js/wp-util.min.js?ver=6.0' id='wp-util-js'></script>
+<script id='user-profile-js-extra'>
+var userProfileL10n = {"user_id":"0","nonce":"4752337ee2"};
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-admin/js/user-profile.min.js?ver=6.0' id='user-profile-js'></script>
+<script id='wp-api-request-js-extra'>
+var wpApiSettings = {"root":"https:\/\/www.dgtlwallet.com\/user-wallet\/wp-json\/","nonce":"33b33218d3","versionString":"wp\/v2\/"};
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-includes/js/api-request.min.js?ver=6.0' id='wp-api-request-js'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-includes/js/dist/vendor/moment.min.js?ver=2.29.2' id='moment-js'></script>
+<script id='moment-js-after'>
+moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-includes/js/dist/date.min.js?ver=e0e02b3a1c7037e6cb893486d4680631' id='wp-date-js'></script>
+<script id='wp-date-js-after'>
+wp.date.setSettings( {"l10n":{"locale":"en_US","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"meridiem":{"am":"am","pm":"pm","AM":"AM","PM":"PM"},"relative":{"future":"%s from now","past":"%s ago"}},"formats":{"time":"g:i a","date":"F j, Y","datetime":"F j, Y g:i a","datetimeAbbreviated":"M j, Y g:i a"},"timezone":{"offset":"3","string":"","abbr":""}} );
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-admin/js/application-passwords.min.js?ver=6.0' id='application-passwords-js'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-admin/js/svg-painter.js?ver=6.0' id='svg-painter-js'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/admin-menu-editor/js/menu-highlight-fix.js?ver=1653462240' id='ame-menu-fix-js'></script>
+<script id='heartbeat-js-extra'>
+var heartbeatSettings = {"nonce":"e023d3217c"};
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-includes/js/heartbeat.min.js?ver=6.0' id='heartbeat-js'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-includes/js/wp-auth-check.min.js?ver=6.0' id='wp-auth-check-js'></script>
+<script id='dup-global-script-js-extra'>
+var dup_global_script_data = {"duplicator_admin_notice_to_dismiss":"a7047236b8"};
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/duplicator/assets/js/global-admin-script.js?ver=1.4.6' id='dup-global-script-js'></script>
+<script id='simple-local-avatars-js-extra'>
+var i10n_SimpleLocalAvatars = {"user_id":"653","insertIntoPost":"Set as avatar","selectCrop":"Select avatar and Crop","deleteNonce":"81021c0c93","cacheNonce":"02a931521f","mediaNonce":"fa1274f3cc","migrateFromWpUserAvatarNonce":"79d67dce0e","clearCacheError":"Something went wrong while clearing cache, please try again.","insertMediaTitle":"Choose default avatar","migrateFromWpUserAvatarSuccess":"Number of avatars successfully migrated from WP User Avatar","migrateFromWpUserAvatarFailure":"No avatars were migrated from WP User Avatar.","migrateFromWpUserAvatarProgress":"Migration in progress."};
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/simple-local-avatars/dist/simple-local-avatars.js?ver=2.2.0' id='simple-local-avatars-js'></script>
+<script id='uip-app-js-extra'>
+var uip_ajax = {"ajax_url":"https:\/\/www.dgtlwallet.com\/user-wallet\/wp-admin\/admin-ajax.php","security":"55edfbb9d7","preferences":"{\"darkmode\":true}","masterPrefs":"{\"general\":{\"module_name\":\"general\",\"label\":\"General\",\"description\":\"General options\",\"icon\":\"settings\",\"options\":{\"dark-default\":{\"name\":\"Set Dark Mode as Default\",\"description\":\"If enabled, dark mode will default to true for users that haven't set a preference.\",\"type\":\"switch\",\"optionName\":\"dark-default\",\"value\":true,\"premium\":true},\"dark-prefers-color-scheme\":{\"name\":\"Set Dark Mode according to prefers color scheme\",\"description\":\"UiPress will detetct the OS color scheme and update accordingly\",\"type\":\"switch\",\"optionName\":\"dark-prefers-color-scheme\",\"value\":\"\",\"premium\":true},\"dark-disabled\":{\"name\":\"Disable dark mode\",\"description\":\"If enabled, dark mode switch will not be available.\",\"type\":\"switch\",\"optionName\":\"dark-disabled\",\"value\":\"\",\"premium\":true},\"redirect-overview\":{\"name\":\"Set overview page as homepage\",\"description\":\"If enabled, the overview page will be the homepage when logging in and when accessing the admin area.\",\"type\":\"switch\",\"optionName\":\"redirect-overview\",\"value\":\"\",\"premium\":true},\"redirect-custom\":{\"name\":\"Set custom page as homepage\",\"description\":\"If enabled, the page you choose will be the homepage when logging in and when accessing the admin area. For admin pages use a relative URL (path after \\\/wp-admin\\\/), for other pages use an absolute URL\",\"type\":\"text\",\"optionName\":\"redirect-custom\",\"value\":\"\",\"premium\":true},\"rename-plugin\":{\"name\":\"Rename DIGITALATTO\",\"description\":\"White label DIGITALATTO by changing the name displayed.\",\"type\":\"text\",\"optionName\":\"rename-plugin\",\"value\":\"DIGITALATTO\",\"premium\":true},\"rename-plugin-author\":{\"name\":\"Rename DIGITALATTO plugin author\",\"description\":\"White label DIGITALATTO by changing the author in the plugin table.\",\"type\":\"text\",\"optionName\":\"rename-plugin-author\",\"value\":\"\",\"premium\":true},\"rename-plugin-link\":{\"name\":\"Change DIGITALATTO plugin URL\",\"description\":\"White label DIGITALATTO by changing the plugin URL in the plugin table.\",\"type\":\"text\",\"optionName\":\"rename-plugin-link\",\"value\":\"\",\"premium\":true},\"app-icon\":{\"name\":\"App Icon\",\"description\":\"Replace DIGITALATTO plugin icon with your own\",\"type\":\"image\",\"optionName\":\"app-icon\",\"value\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-content\\\/uploads\\\/2022\\\/02\\\/digitalatto.png\",\"premium\":true},\"admin-favicon\":{\"name\":\"Admin Favicon\",\"description\":\"Add an image to be used as the site favicon for admin pages.\",\"type\":\"image\",\"optionName\":\"admin-favicon\",\"value\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-content\\\/uploads\\\/2022\\\/02\\\/digitalatto.png\",\"premium\":true},\"hide-plugin\":{\"name\":\"Hide DIGITALATTO from plugin table\",\"description\":\"If enabled, DIGITALATTO will be hidden from the plugin table\",\"type\":\"switch\",\"optionName\":\"hide-plugin\",\"value\":false,\"premium\":true},\"hide-footer\":{\"name\":\"Hide Footer\",\"description\":\"Hide the footer text that shows at the bottom of every admin page\",\"type\":\"switch\",\"optionName\":\"hide-footer\",\"value\":true,\"premium\":true},\"footer-text\":{\"name\":\"Footer Text\",\"description\":\"Text entered here will be present at the bottom of admin pages\",\"type\":\"textarea\",\"optionName\":\"footer-text\",\"value\":\"\",\"premium\":true}}},\"menu\":{\"module_name\":\"menu\",\"label\":\"Menu\",\"description\":\"Creates new admin menu.\",\"icon\":\"list\",\"options\":{\"status\":{\"name\":\"Disable Admin Menu Module\",\"description\":\"Creates new admin menu.\",\"type\":\"switch\",\"optionName\":\"status\",\"value\":false},\"disabled-for\":{\"name\":\"Menu Disabled for\",\"description\":\"DIGITALATTO menu will be disabled for any users or roles you select\",\"type\":\"user-role-select\",\"optionName\":\"disabled-for\",\"premium\":true,\"value\":[]},\"light-logo\":{\"name\":\"Logo Light Mode\",\"description\":\"Sets the logo for the admin bar in light mode.\",\"type\":\"image\",\"optionName\":\"light-logo\",\"value\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-content\\\/uploads\\\/2022\\\/02\\\/digitalatto.png\"},\"dark-logo\":{\"name\":\"Logo Dark Mode\",\"description\":\"Optional dark mode logo for admin bar.\",\"type\":\"image\",\"optionName\":\"dark-logo\",\"value\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-content\\\/uploads\\\/2022\\\/02\\\/digitalatto.png\"},\"load-front\":{\"name\":\"Load DIGITALATTO Menu on front end\",\"description\":\"If enabled, DIGITALATTO menu will load on the front end. Please note, this will not work on all themes and styling will vary\",\"type\":\"switch\",\"premium\":true,\"optionName\":\"load-front\",\"value\":\"\"},\"load-front-for\":{\"name\":\"Only Load DIGITALATTO Menu on front end for\",\"description\":\"Only load front end menu for selected roles and usernames\",\"type\":\"user-role-select\",\"premium\":true,\"optionName\":\"load-front-for\",\"value\":[]},\"light-logo-collapsed\":{\"name\":\"Collapsed Menu Logo Light Mode\",\"description\":\"Optional logo for when the menu is collapsed.\",\"type\":\"image\",\"optionName\":\"light-logo-collapsed\",\"value\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-content\\\/uploads\\\/2022\\\/02\\\/digitalatto.png\"},\"dark-logo-collapsed\":{\"name\":\"Collapsed Menu Logo Dark Mode\",\"description\":\"Optional dark nmode logo for when the menu is collapsed.\",\"type\":\"image\",\"optionName\":\"dark-logo-collapsed\",\"value\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-content\\\/uploads\\\/2022\\\/02\\\/digitalatto.png\"},\"show-site-logo\":{\"name\":\"Show site title in menu\",\"description\":\"If enabled, the site title will be displayed in the menu next to the logo\",\"type\":\"switch\",\"optionName\":\"show-site-logo\",\"value\":true},\"search-enabled\":{\"name\":\"Disable Search\",\"description\":\"Disables admin menu search.\",\"type\":\"switch\",\"optionName\":\"search-enabled\",\"value\":true},\"shrunk-default\":{\"name\":\"Set collapsed menu as default\",\"description\":\"If enabled, the menu will default to the shrunk menu for users that haven't set a preference..\",\"type\":\"switch\",\"optionName\":\"shrunk-default\",\"value\":\"\"}}},\"toolbar\":{\"module_name\":\"toolbar\",\"label\":\"Toolbar\",\"description\":\"Creates new admin toolbar.\",\"icon\":\"build_circle\",\"options\":{\"status\":{\"name\":\"Disable ToolBar Module?\",\"description\":\"Creates new admin bar, adds user off canvas menu, builds global search and notification center.\",\"type\":\"switch\",\"optionName\":\"status\",\"value\":\"\"},\"disabled-for\":{\"name\":\"Admin Bar Disabled For\",\"description\":\"DIGITALATTO toolbar module will be disabled for any users or roles you select\",\"type\":\"user-role-select\",\"optionName\":\"disabled-for\",\"premium\":true,\"value\":[]},\"legacy-admin\":{\"name\":\"Hide admin bar links (left side)\",\"description\":\"Disables legacy links on left side of admin bar for all users. Also hides the user preference.\",\"type\":\"switch\",\"optionName\":\"legacy-admin\",\"value\":\"\"},\"search-disabled\":{\"name\":\"Disable Search\",\"description\":\"Disables search icon and global search function from admin bar.\",\"type\":\"switch\",\"optionName\":\"search-disabled\",\"value\":true},\"new-enabled\":{\"name\":\"Disable Create Button\",\"description\":\"Disables the 'create' button in the admin bar.\",\"type\":\"switch\",\"optionName\":\"new-enabled\",\"value\":true},\"view-new-tab\":{\"name\":\"Open View Website in new tab\",\"description\":\"When enabled, clicking on view website or the home button will open in a new browser tab\",\"type\":\"switch\",\"optionName\":\"view-new-tab\",\"value\":\"\"},\"view-enabled\":{\"name\":\"Disable View Website Button\",\"description\":\"Disables the view website link button in the admin bar.\",\"type\":\"switch\",\"optionName\":\"view-enabled\",\"value\":\"\"},\"load-front\":{\"name\":\"Load DIGITALATTO admin bar on front end\",\"description\":\"If enabled, DIGITALATTO toolbar will load on the front end. Please note, this will not work on all themes and styling will vary\",\"type\":\"switch\",\"premium\":true,\"optionName\":\"load-front\",\"value\":\"\"},\"hide-admin\":{\"name\":\"Hide admin bar on front end\",\"description\":\"If enabled, front end admin bar will not load.\",\"type\":\"switch\",\"optionName\":\"hide-admin\",\"premium\":true,\"value\":true},\"notification-center-disabled\":{\"name\":\"Disable Notification Center\",\"description\":\"If disabled, notifcations will show in the normal way\",\"type\":\"switch\",\"premium\":true,\"optionName\":\"notification-center-disabled\",\"value\":\"\"},\"post-types-search\":{\"name\":\"Post Types available in Search\",\"description\":\"The global search will only search the selected post types.\",\"type\":\"post-type-select\",\"optionName\":\"post-types-search\",\"premium\":true,\"value\":[]},\"post-types-create\":{\"name\":\"Post Types available in create button (new)\",\"description\":\"Only the selected post types will show up in the create dropdown.\",\"type\":\"post-type-select\",\"optionName\":\"post-types-create\",\"premium\":true,\"value\":[]},\"notifcations-disabled-for\":{\"name\":\"Only show notifications to\",\"description\":\"DIGITALATTO will hide all notifications from all users except those selected below\",\"type\":\"user-role-select\",\"optionName\":\"notifcations-disabled-for\",\"premium\":true,\"value\":[\"Administrator\",\"Super Admin\"]},\"updates-disabled-for\":{\"name\":\"Only show updates to\",\"description\":\"DIGITALATTO will hide all updates from all users except those selected below\",\"type\":\"user-role-select\",\"optionName\":\"updates-disabled-for\",\"premium\":true,\"value\":[\"Administrator\",\"Super Admin\"]}}},\"theme\":{\"module_name\":\"theme\",\"label\":\"Theme\",\"description\":\"Styles page content.\",\"icon\":\"brush\",\"options\":{\"status\":{\"name\":\"Disable Admin Theme Module\",\"description\":\"When the theme is disabled, pages will be styles in the original way.\",\"type\":\"switch\",\"optionName\":\"status\",\"value\":\"\"},\"disabled-for\":{\"name\":\"Theme Disabled for\",\"description\":\"When the theme is disabled, pages will be styles in the original way for selected users or roles.\",\"type\":\"user-role-select\",\"optionName\":\"disabled-for\",\"premium\":true,\"value\":[]}}},\"login\":{\"module_name\":\"login\",\"label\":\"Login\",\"description\":\"Styles page content.\",\"icon\":\"login\",\"options\":{\"status\":{\"name\":\"Disable Login Module\",\"description\":\"When the login module is disabled, the login page will be displayed in the original way.\",\"type\":\"switch\",\"optionName\":\"status\",\"premium\":false,\"value\":\"\"},\"login-dark-mode\":{\"name\":\"Dark Mode\",\"description\":\"Puts the login page in dark mode for all users.\",\"type\":\"switch\",\"optionName\":\"login-dark-mode\",\"value\":true},\"remove-language-selector\":{\"name\":\"Disable Language Selector\",\"description\":\"Removes the language selector added to the login page\",\"type\":\"switch\",\"optionName\":\"remove-language-selector\",\"value\":true},\"login-logo\":{\"name\":\"Login Logo\",\"description\":\"Sets the logo for the login page\",\"type\":\"image\",\"optionName\":\"login-logo\",\"value\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-content\\\/uploads\\\/2022\\\/02\\\/digitalatto.png\"},\"login-background\":{\"name\":\"Login Background\",\"description\":\"Sets an optional background image on the login page.\",\"type\":\"image\",\"optionName\":\"login-background\",\"premium\":true,\"value\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-content\\\/uploads\\\/2022\\\/02\\\/dlt-blockchain-network-810x500-1.jpg\"}}},\"advanced\":{\"module_name\":\"advanced\",\"label\":\"Advanced\",\"description\":\"Styles page content.\",\"icon\":\"code\",\"options\":{\"disabled-for\":{\"name\":\"Advanced Disabled For\",\"description\":\"Code added here will not load for any users or roles you select\",\"type\":\"user-role-select\",\"optionName\":\"disabled-for\",\"premium\":true,\"value\":[\"Administrator\",\"Super Admin\"]},\"enqueue-scripts\":{\"name\":\"Enqueue scripts\",\"description\":\"Add scripts to the head of every admin page and login page\",\"type\":\"multiple-text\",\"optionName\":\"enqueue-scripts\",\"premium\":true,\"value\":[]},\"enqueue-styles\":{\"name\":\"Enqueue styles\",\"description\":\"Add stylesheets to the head of every admin page and login page\",\"type\":\"multiple-text\",\"optionName\":\"enqueue-styles\",\"premium\":true,\"value\":[]},\"admin-css\":{\"name\":\"Admin CSS\",\"description\":\"CSS added here will be loaded on every admin page as well as the login page\",\"type\":\"code-block\",\"language\":\"css\",\"optionName\":\"admin-css\",\"premium\":true,\"value\":\".user-admin-color-wrap{\\n  display:none !important;\\n}\\n\\n.metabox-prefs{\\n  display:none !important;\\n}\\n\\n.user-profile-picture{\\n  display:none !important;\\n}\\n.user-display-name-wrap{\\n  display:none !important;\\n}\\n.user-url-wrap{\\n  display:none !important;\\n}\\n.user-admin-bar-front-wrap{\\n  display:none !important;\\n}\\n\\n#dashboard-widgets-wrap{\\n  display:none !important;\\n}\\n\\n\"},\"admin-js\":{\"name\":\"Admin JavaScript\",\"description\":\"JavaScript added here will be loaded on every admin page as well as the login page\",\"type\":\"code-block\",\"language\":\"javascript\",\"optionName\":\"admin-js\",\"premium\":true,\"value\":\"\"},\"admin-html\":{\"name\":\"HTML for document head\",\"description\":\"Add HTML here to be added to every admin page and login page head section\",\"type\":\"code-block\",\"language\":\"HTML\",\"optionName\":\"admin-html\",\"premium\":true,\"value\":\"\"}}},\"dataConnect\":false,\"folders\":{\"module_name\":\"folders\",\"label\":\"Folders\",\"description\":\"Creates media folder system.\",\"icon\":\"folder\",\"options\":{\"status\":{\"name\":\"Disable Folders?\",\"description\":\"No media folders will be displayed when this option is activated.\",\"type\":\"switch\",\"optionName\":\"status\",\"value\":true},\"disabled-for\":{\"name\":\"Folders Disabled For\",\"description\":\"DIGITALATTO folders will be disabled for any users or roles you select\",\"type\":\"user-role-select\",\"optionName\":\"disabled-for\",\"premium\":true,\"value\":[\"Subscriber\"]},\"folders-post-tyes\":{\"name\":\"Enable folders for post types\",\"description\":\"DIGITALATTO folders will be enabled post, page and custom post types you choose\",\"type\":\"post-type-select\",\"optionName\":\"folders-post-tyes\",\"premium\":true,\"value\":[]}}},\"menu-creator\":{\"module_name\":\"menu-creator\",\"label\":\"Menu Creator\",\"description\":\"Creates custom admin menus.\",\"icon\":\"segment\",\"options\":{\"status\":{\"name\":\"Disable Menu Creator?\",\"description\":\"If disabled, the menu creator will not be available to any users.\",\"type\":\"switch\",\"optionName\":\"status\",\"value\":false}}},\"overview\":{\"module_name\":\"overview\",\"label\":\"Overview\",\"description\":\"Creates the overview page.\",\"icon\":\"analytics\",\"options\":{\"status\":{\"name\":\"Disable Overview Page?\",\"description\":\"Overview page will be hidden when this option is activated.\",\"type\":\"switch\",\"optionName\":\"status\",\"value\":false},\"disabled-for\":{\"name\":\"Overview Page Disabled For\",\"description\":\"Overview Page will be disabled for any users or roles you select\",\"type\":\"user-role-select\",\"optionName\":\"disabled-for\",\"premium\":true,\"value\":[\"Subscriber\"]},\"disable-edit-for\":{\"name\":\"Who can edit the overview page?\",\"description\":\"Any role or user chosen here will be able to edit the overview page. If none are chosen it will fall back to administrators only\",\"type\":\"user-role-select\",\"optionName\":\"disable-edit-for\",\"premium\":true,\"value\":[\"Administrator\",\"Super Admin\"]},\"start-day\":{\"name\":\"Default report start date\",\"description\":\"By default the overview date range will start 7 days before current date. Add a number of days between 1 and 90 to change length of date range\",\"type\":\"text\",\"optionName\":\"start-day\",\"premium\":true,\"value\":\"\"},\"end-day\":{\"name\":\"Default report end date offset\",\"description\":\"By default the overview date range will end on the current day (0). To end the report on yesterday for example, enter 1\",\"type\":\"text\",\"optionName\":\"end-day\",\"premium\":true,\"value\":\"\"},\"reporting-currency\":{\"name\":\"Reporting Currency Symbol\",\"description\":\"If you are using google analytics commerce reports, enter the currency symbol your reports are in here\",\"type\":\"text\",\"optionName\":\"reporting-currency\",\"premium\":true,\"value\":\"\"},\"custom-welcome\":{\"name\":\"Custom welcome message\",\"description\":\"Add a custom welcome message here to displayed on the overview page\",\"type\":\"code-block\",\"language\":\"HTML\",\"optionName\":\"custom-welcome\",\"premium\":true,\"value\":\"\"}}},\"content\":{\"module_name\":\"content\",\"label\":\"Content Page\",\"description\":\"Creates content page\",\"icon\":\"perm_media\",\"options\":{\"status\":{\"name\":\"Disable Content Page?\",\"description\":\"If disabled, the content page will not be available to any users.\",\"type\":\"switch\",\"optionName\":\"status\",\"value\":true},\"disabled-for\":{\"name\":\"Content Page Disabled for\",\"description\":\"When the content page module is disabled, the content page will not be accesible for the users \\\/ roles\",\"type\":\"user-role-select\",\"optionName\":\"disabled-for\",\"premium\":true,\"value\":[\"Subscriber\"]},\"post-types-content\":{\"name\":\"Post types available in content page\",\"description\":\"Only the selected post types will be available in the content page.\",\"type\":\"post-type-select\",\"optionName\":\"post-types-content\",\"premium\":true,\"value\":[]},\"private-mode\":{\"name\":\"Enable private library mode\",\"description\":\"When enabled, the content page will only show content created by or uploaded by the currently logged in user. This also includes folders\",\"type\":\"switch\",\"optionName\":\"private-mode\",\"premium\":true,\"value\":true}}},\"admin-pages\":{\"module_name\":\"admin-pages\",\"label\":\"Admin Pages - Beta\",\"description\":\"Creates custom admin pages.\",\"icon\":\"segment\",\"options\":{\"status\":{\"name\":\"Disable custom admin pages?\",\"description\":\"If disabled, the admin pages will not be available to any users.\",\"type\":\"switch\",\"optionName\":\"status\",\"value\":\"\"},\"admin-slug\":{\"name\":\"Admin Page Slug\",\"description\":\"This defaults to admin-pages. Changes to this will need you to resave permalink structure.\",\"type\":\"text\",\"optionName\":\"admin-slug\",\"value\":\"\"},\"disabled-for\":{\"name\":\"Who can edit and create admin pages?\",\"description\":\"Editing and creation of admin pages will be disabled for the users or roles you select\",\"type\":\"user-role-select\",\"optionName\":\"disabled-for\",\"premium\":true,\"value\":[]},\"show-pages-for\":{\"name\":\"Who can see admin pages?\",\"description\":\"UiPress will only show admin pages for the users or roles you select\",\"type\":\"user-role-select\",\"optionName\":\"show-pages-for\",\"premium\":true,\"value\":[]}}}}","translations":"{\"menuPreferences\":\"Menu Preferences\",\"hideSearchBar\":\"Hide search bar\",\"hideIcons\":\"Hide Icons\",\"showSubmenuHover\":\"Show submenu on hover\",\"searchMenu\":\"Search Menu\",\"preFeature\":\"Pro Feature\",\"search\":\"Search\",\"view\":\"View\",\"edit\":\"Edit\",\"showMore\":\"Show more\",\"otherMatches\":\"other matches\",\"nothingFound\":\"Nothing found\",\"viewSite\":\"View Site\",\"viewDashboard\":\"Dashboard\",\"searchSite\":\"Search Site\",\"create\":\"Create\",\"createNew\":\"Create New\",\"updates\":\"Updates\",\"preferences\":\"Preferences\",\"darkMode\":\"Dark mode\",\"showScreenOptions\":\"Show screen options toggle\",\"screenOptions\":\"Screen options\",\"hideLegacy\":\"Hide admin bar links (left)\",\"logOut\":\"Logout\",\"notifications\":\"Notifications\",\"hideNotification\":\"Hide notification\",\"hiddenNotification\":\"hidden notifications\",\"showAll\":\"show all\",\"notificationHidden\":\"Notifiction Hidden\",\"toggleMenu\":\"Toggle Menu\",\"chooseUserRole\":\"Choose users or roles\",\"searchUserRole\":\"Search users and roles\",\"chooseImage\":\"Choose Image\",\"choosePostTypes\":\"Choose Post Types\",\"searchPostTypes\":\"Searach Post Types\",\"somethingWrong\":\"Something went wrong\",\"settingsSaved\":\"Settings saved\",\"default\":\"Default\",\"addFile\":\"Add File\",\"urlToFile\":\"URL to file\",\"remove\":\"Remove\",\"allMedia\":\"All media\",\"allContent\":\"All Content\",\"noFolder\":\"No folder\",\"folders\":\"Folders\",\"newFolder\":\"New Folder\",\"folderName\":\"Folder Name\",\"color\":\"Colour\",\"name\":\"Name\",\"editFolder\":\"Edit Folder\",\"update\":\"Update\",\"oneFile\":\"1 File\",\"files\":\"files\",\"noFolders\":\"You haven't created a folder yet\",\"removeFromFolder\":\"Remove from folder\",\"unlockNotificationCenter\":\"Upgrade to pro to unlock the notification center. View, edit and organise all your plugin and theme notifications in one place\",\"unlockSearch\":\"Upgrade to pro to gain full control of search results and included post types\",\"notValidJson\":\"Please select a valid JSON file\",\"fileToBig\":\"File is to big\",\"stylesImported\":\"Styles Imported\",\"settingsImported\":\"Settings Imported\",\"removeLicence\":\"Remove Licence\",\"isActivated\":\"DIGITALATTO Pro is active\",\"uipressPro\":\"DIGITALATTO Pro\",\"activate\":\"Activate\",\"addProLicence\":\"Add a pro licence to unlock pro features.\",\"chooseIcon\":\"Choose Icon\",\"confirmDelete\":\"Are you sure you want to delete this?\",\"importStarted\":\"Import started\",\"confirmReset\":\"Are you sure you want to reset the settings?\",\"lastSevenDays\":\"Last 7 Days\",\"last30days\":\"Last 30 Days\",\"thisMonth\":\"This Month\",\"lastMonth\":\"Last Month\",\"today\":\"Today\",\"yesterday\":\"Yesterday\",\"selected\":\"selected\",\"themeLibrary\":\"Theme Library\",\"library\":\"Library\",\"importTheme\":\"Import Theme\",\"proTemplate\":\"Pro template\",\"themeImported\":\"Theme Imported\",\"madeBy\":\"Made by\",\"settings\":\"Settings\",\"failedfolders\":\"Failed to fetch folder content\"}","defaults":"{\"logo\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-content\\\/plugins\\\/uipress\\\/assets\\\/img\\\/default_logo.svg\",\"darkLogo\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-content\\\/plugins\\\/uipress\\\/assets\\\/img\\\/default_logo_dark.svg\",\"adminHome\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-admin\\\/\",\"adminURL\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/wp-admin\\\/\",\"siteHome\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\",\"logOut\":\"https:\\\/\\\/www.dgtlwallet.com\\\/user-wallet\\\/profile\\\/?action=logout&_wpnonce=0328412247\",\"siteName\":\"Digitalatto\",\"front\":false,\"user\":{\"initial\":\"w\",\"username\":\"wilson\",\"email\":\"wilsonzimthamaha@gmail.com\",\"img\":false}}","network":"","front":"false"};
+</script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/uipress/assets/js/uip-app.min.js?ver=2.3.4' id='uip-app-js'></script>
+<script src='https://www.dgtlwallet.com/user-wallet/wp-content/plugins/uipress/assets/js/uip-toolbar.min.js?ver=2.3.4' id='uip-toolbar-app-js'></script>
+
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload==='function')wpOnload();</script>
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh-oh'},{'server':'sg2plzcpnl490941'},{'id':'8580127'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
